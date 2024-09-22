@@ -1,0 +1,456 @@
+0 verbose cli /usr/bin/node /usr/bin/npm
+1 info using npm@9.2.0
+2 info using node@v18.19.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/share/nodejs/npm/npmrc Completed in 6ms
+6 timing config:load:builtin Completed in 6ms
+7 timing config:load:cli Completed in 3ms
+8 timing config:load:env Completed in 2ms
+9 timing config:load:project Completed in 0ms
+10 timing config:load:file:/home/ubuntu/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/etc/npmrc Completed in 0ms
+13 timing config:load:global Completed in 0ms
+14 timing config:load:setEnvs Completed in 2ms
+15 timing config:load Completed in 17ms
+16 timing npm:load:configload Completed in 18ms
+17 timing npm:load:mkdirpcache Completed in 2ms
+18 timing npm:load:mkdirplogs Completed in 0ms
+19 verbose title npm install vite
+20 verbose argv "install" "vite"
+21 timing npm:load:setTitle Completed in 1ms
+22 timing config:load:flatten Completed in 5ms
+23 timing npm:load:display Completed in 9ms
+24 verbose logfile logs-max:10 dir:/home/ubuntu/.npm/_logs/2024-09-21T10_19_27_923Z-
+25 verbose logfile /home/ubuntu/.npm/_logs/2024-09-21T10_19_27_923Z-debug-0.log
+26 timing npm:load:logFile Completed in 11ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 41ms
+30 silly logfile done cleaning log files
+31 timing config:load:flatten Completed in 0ms
+32 timing arborist:ctor Completed in 1ms
+33 timing arborist:ctor Completed in 0ms
+34 timing idealTree:init Completed in 27ms
+35 timing idealTree:userRequests Completed in 9ms
+36 silly idealTree buildDeps
+37 silly fetch manifest vite@*
+38 http fetch GET 200 https://registry.npmjs.org/vite 213ms (cache updated)
+39 silly fetch manifest @types/node@^18.0.0 || >=20.0.0
+40 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 117ms (cache revalidated)
+41 silly fetch manifest less@*
+42 http fetch GET 200 https://registry.npmjs.org/less 36ms (cache revalidated)
+43 silly fetch manifest lightningcss@^1.21.0
+44 http fetch GET 200 https://registry.npmjs.org/lightningcss 43ms (cache revalidated)
+45 silly fetch manifest sass@*
+46 http fetch GET 200 https://registry.npmjs.org/sass 46ms (cache updated)
+47 silly fetch manifest sass-embedded@*
+48 http fetch GET 200 https://registry.npmjs.org/sass-embedded 35ms (cache updated)
+49 silly fetch manifest stylus@*
+50 http fetch GET 200 https://registry.npmjs.org/stylus 49ms (cache revalidated)
+51 silly fetch manifest sugarss@*
+52 http fetch GET 200 https://registry.npmjs.org/sugarss 39ms (cache revalidated)
+53 silly fetch manifest postcss@^8.3.3
+54 http fetch GET 200 https://registry.npmjs.org/postcss 38ms (cache revalidated)
+55 silly fetch manifest terser@^5.4.0
+56 http fetch GET 200 https://registry.npmjs.org/terser 83ms (cache revalidated)
+57 silly placeDep ROOT vite@5.4.7 OK for:  want: *
+58 silly fetch manifest esbuild@^0.21.3
+59 silly fetch manifest postcss@^8.4.43
+60 silly fetch manifest rollup@^4.20.0
+61 silly fetch manifest fsevents@~2.3.3
+62 http fetch GET 200 https://registry.npmjs.org/esbuild 45ms (cache revalidated)
+63 http fetch GET 200 https://registry.npmjs.org/fsevents 77ms (cache revalidated)
+64 http fetch GET 200 https://registry.npmjs.org/rollup 133ms (cache updated)
+65 timing idealTree:#root Completed in 990ms
+66 silly placeDep ROOT esbuild@0.21.5 OK for: vite@5.4.7 want: ^0.21.3
+67 silly placeDep ROOT fsevents@2.3.3 OK for: vite@5.4.7 want: ~2.3.3
+68 silly placeDep ROOT postcss@8.4.47 OK for: vite@5.4.7 want: ^8.4.43
+69 silly placeDep ROOT rollup@4.22.4 OK for: vite@5.4.7 want: ^4.20.0
+70 silly fetch manifest @esbuild/aix-ppc64@0.21.5
+71 silly fetch manifest @esbuild/linux-arm@0.21.5
+72 silly fetch manifest @esbuild/linux-x64@0.21.5
+73 silly fetch manifest @esbuild/sunos-x64@0.21.5
+74 silly fetch manifest @esbuild/win32-x64@0.21.5
+75 silly fetch manifest @esbuild/darwin-x64@0.21.5
+76 silly fetch manifest @esbuild/linux-ia32@0.21.5
+77 silly fetch manifest @esbuild/netbsd-x64@0.21.5
+78 silly fetch manifest @esbuild/win32-ia32@0.21.5
+79 silly fetch manifest @esbuild/android-arm@0.21.5
+80 silly fetch manifest @esbuild/android-x64@0.21.5
+81 silly fetch manifest @esbuild/freebsd-x64@0.21.5
+82 silly fetch manifest @esbuild/linux-arm64@0.21.5
+83 silly fetch manifest @esbuild/linux-ppc64@0.21.5
+84 silly fetch manifest @esbuild/linux-s390x@0.21.5
+85 silly fetch manifest @esbuild/openbsd-x64@0.21.5
+86 silly fetch manifest @esbuild/win32-arm64@0.21.5
+87 silly fetch manifest @esbuild/darwin-arm64@0.21.5
+88 silly fetch manifest @esbuild/android-arm64@0.21.5
+89 silly fetch manifest @esbuild/freebsd-arm64@0.21.5
+90 silly fetch manifest @esbuild/linux-loong64@0.21.5
+91 silly fetch manifest @esbuild/linux-riscv64@0.21.5
+92 silly fetch manifest @esbuild/linux-mips64el@0.21.5
+93 silly fetch manifest nanoid@^3.3.7
+94 silly fetch manifest picocolors@^1.1.0
+95 silly fetch manifest source-map-js@^1.2.1
+96 silly fetch manifest @types/estree@1.0.5
+97 silly fetch manifest @rollup/rollup-darwin-x64@4.22.4
+98 silly fetch manifest @rollup/rollup-darwin-arm64@4.22.4
+99 silly fetch manifest @rollup/rollup-android-arm64@4.22.4
+100 silly fetch manifest @rollup/rollup-linux-x64-gnu@4.22.4
+101 silly fetch manifest @rollup/rollup-linux-x64-musl@4.22.4
+102 silly fetch manifest @rollup/rollup-win32-x64-msvc@4.22.4
+103 silly fetch manifest @rollup/rollup-linux-arm64-gnu@4.22.4
+104 silly fetch manifest @rollup/rollup-linux-s390x-gnu@4.22.4
+105 silly fetch manifest @rollup/rollup-win32-ia32-msvc@4.22.4
+106 silly fetch manifest @rollup/rollup-android-arm-eabi@4.22.4
+107 silly fetch manifest @rollup/rollup-linux-arm64-musl@4.22.4
+108 silly fetch manifest @rollup/rollup-win32-arm64-msvc@4.22.4
+109 silly fetch manifest @rollup/rollup-linux-riscv64-gnu@4.22.4
+110 silly fetch manifest @rollup/rollup-linux-arm-gnueabihf@4.22.4
+111 silly fetch manifest @rollup/rollup-linux-arm-musleabihf@4.22.4
+112 silly fetch manifest @rollup/rollup-linux-powerpc64le-gnu@4.22.4
+113 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-x64 266ms (cache revalidated)
+114 http fetch GET 200 https://registry.npmjs.org/picocolors 244ms (cache revalidated)
+115 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-riscv64 249ms (cache revalidated)
+116 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-darwin-x64 242ms (cache updated)
+117 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-x64 285ms (cache revalidated)
+118 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-loong64 278ms (cache revalidated)
+119 http fetch GET 200 https://registry.npmjs.org/nanoid 279ms (cache revalidated)
+120 http fetch GET 200 https://registry.npmjs.org/source-map-js 303ms (cache revalidated)
+121 http fetch GET 200 https://registry.npmjs.org/@esbuild%2faix-ppc64 335ms (cache revalidated)
+122 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm64 318ms (cache revalidated)
+123 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm 323ms (cache revalidated)
+124 http fetch GET 200 https://registry.npmjs.org/@types%2festree 311ms (cache revalidated)
+125 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-mips64el 321ms (cache revalidated)
+126 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-arm64 324ms (cache revalidated)
+127 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ppc64 344ms (cache revalidated)
+128 http fetch GET 200 https://registry.npmjs.org/@esbuild%2ffreebsd-x64 359ms (cache revalidated)
+129 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-s390x 358ms (cache revalidated)
+130 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fnetbsd-x64 368ms (cache revalidated)
+131 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fdarwin-arm64 371ms (cache revalidated)
+132 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-x64 379ms (cache revalidated)
+133 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fsunos-x64 514ms (cache revalidated)
+134 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fandroid-arm64 507ms (cache revalidated)
+135 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-android-arm64 498ms (cache updated)
+136 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-ia32 525ms (cache revalidated)
+137 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm-musleabihf 474ms (cache updated)
+138 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-s390x-gnu 508ms (cache updated)
+139 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm64-musl 512ms (cache updated)
+140 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-x64-gnu 522ms (cache updated)
+141 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-x64 557ms (cache revalidated)
+142 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-x64-msvc 536ms (cache updated)
+143 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-x64-musl 538ms (cache updated)
+144 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm64-gnu 539ms (cache updated)
+145 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-arm-gnueabihf 521ms (cache updated)
+146 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-android-arm-eabi 537ms (cache updated)
+147 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-ia32 575ms (cache revalidated)
+148 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-arm64-msvc 536ms (cache updated)
+149 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-darwin-arm64 554ms (cache updated)
+150 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-powerpc64le-gnu 600ms (cache updated)
+151 http fetch GET 200 https://registry.npmjs.org/@esbuild%2flinux-arm 836ms (cache revalidated)
+152 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fopenbsd-x64 1515ms (cache revalidated)
+153 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-linux-riscv64-gnu 1618ms (cache updated)
+154 http fetch GET 200 https://registry.npmjs.org/@esbuild%2fwin32-arm64 1743ms (cache revalidated)
+155 http fetch GET 200 https://registry.npmjs.org/@rollup%2frollup-win32-ia32-msvc 1871ms (cache updated)
+156 timing idealTree:node_modules/vite Completed in 1928ms
+157 silly placeDep ROOT @esbuild/aix-ppc64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+158 silly placeDep ROOT @esbuild/android-arm@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+159 silly placeDep ROOT @esbuild/android-arm64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+160 silly placeDep ROOT @esbuild/android-x64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+161 silly placeDep ROOT @esbuild/darwin-arm64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+162 silly placeDep ROOT @esbuild/darwin-x64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+163 silly placeDep ROOT @esbuild/freebsd-arm64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+164 silly placeDep ROOT @esbuild/freebsd-x64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+165 silly placeDep ROOT @esbuild/linux-arm@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+166 silly placeDep ROOT @esbuild/linux-arm64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+167 silly placeDep ROOT @esbuild/linux-ia32@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+168 silly placeDep ROOT @esbuild/linux-loong64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+169 silly placeDep ROOT @esbuild/linux-mips64el@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+170 silly placeDep ROOT @esbuild/linux-ppc64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+171 silly placeDep ROOT @esbuild/linux-riscv64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+172 silly placeDep ROOT @esbuild/linux-s390x@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+173 silly placeDep ROOT @esbuild/linux-x64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+174 silly placeDep ROOT @esbuild/netbsd-x64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+175 silly placeDep ROOT @esbuild/openbsd-x64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+176 silly placeDep ROOT @esbuild/sunos-x64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+177 silly placeDep ROOT @esbuild/win32-arm64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+178 silly placeDep ROOT @esbuild/win32-ia32@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+179 silly placeDep ROOT @esbuild/win32-x64@0.21.5 OK for: esbuild@0.21.5 want: 0.21.5
+180 timing idealTree:node_modules/esbuild Completed in 44ms
+181 timing idealTree:node_modules/@esbuild/aix-ppc64 Completed in 0ms
+182 timing idealTree:node_modules/@esbuild/android-arm Completed in 0ms
+183 timing idealTree:node_modules/@esbuild/android-arm64 Completed in 0ms
+184 timing idealTree:node_modules/@esbuild/android-x64 Completed in 0ms
+185 timing idealTree:node_modules/@esbuild/darwin-arm64 Completed in 0ms
+186 timing idealTree:node_modules/@esbuild/darwin-x64 Completed in 0ms
+187 timing idealTree:node_modules/@esbuild/freebsd-arm64 Completed in 0ms
+188 timing idealTree:node_modules/@esbuild/freebsd-x64 Completed in 0ms
+189 timing idealTree:node_modules/@esbuild/linux-arm Completed in 0ms
+190 timing idealTree:node_modules/@esbuild/linux-arm64 Completed in 0ms
+191 timing idealTree:node_modules/@esbuild/linux-ia32 Completed in 0ms
+192 timing idealTree:node_modules/@esbuild/linux-loong64 Completed in 0ms
+193 timing idealTree:node_modules/@esbuild/linux-mips64el Completed in 0ms
+194 timing idealTree:node_modules/@esbuild/linux-ppc64 Completed in 0ms
+195 timing idealTree:node_modules/@esbuild/linux-riscv64 Completed in 0ms
+196 timing idealTree:node_modules/@esbuild/linux-s390x Completed in 0ms
+197 timing idealTree:node_modules/@esbuild/linux-x64 Completed in 0ms
+198 timing idealTree:node_modules/@esbuild/netbsd-x64 Completed in 0ms
+199 timing idealTree:node_modules/@esbuild/openbsd-x64 Completed in 0ms
+200 timing idealTree:node_modules/@esbuild/sunos-x64 Completed in 0ms
+201 timing idealTree:node_modules/@esbuild/win32-arm64 Completed in 0ms
+202 timing idealTree:node_modules/@esbuild/win32-ia32 Completed in 0ms
+203 timing idealTree:node_modules/@esbuild/win32-x64 Completed in 0ms
+204 timing idealTree:node_modules/fsevents Completed in 0ms
+205 silly placeDep ROOT nanoid@3.3.7 OK for: postcss@8.4.47 want: ^3.3.7
+206 silly placeDep ROOT picocolors@1.1.0 OK for: postcss@8.4.47 want: ^1.1.0
+207 silly placeDep ROOT source-map-js@1.2.1 OK for: postcss@8.4.47 want: ^1.2.1
+208 timing idealTree:node_modules/postcss Completed in 3ms
+209 timing idealTree:node_modules/nanoid Completed in 0ms
+210 timing idealTree:node_modules/picocolors Completed in 0ms
+211 silly placeDep ROOT @rollup/rollup-android-arm-eabi@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+212 silly placeDep ROOT @rollup/rollup-android-arm64@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+213 silly placeDep ROOT @rollup/rollup-darwin-arm64@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+214 silly placeDep ROOT @rollup/rollup-darwin-x64@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+215 silly placeDep ROOT @rollup/rollup-linux-arm-gnueabihf@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+216 silly placeDep ROOT @rollup/rollup-linux-arm-musleabihf@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+217 silly placeDep ROOT @rollup/rollup-linux-arm64-gnu@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+218 silly placeDep ROOT @rollup/rollup-linux-arm64-musl@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+219 silly placeDep ROOT @rollup/rollup-linux-powerpc64le-gnu@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+220 silly placeDep ROOT @rollup/rollup-linux-riscv64-gnu@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+221 silly placeDep ROOT @rollup/rollup-linux-s390x-gnu@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+222 silly placeDep ROOT @rollup/rollup-linux-x64-gnu@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+223 silly placeDep ROOT @rollup/rollup-linux-x64-musl@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+224 silly placeDep ROOT @rollup/rollup-win32-arm64-msvc@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+225 silly placeDep ROOT @rollup/rollup-win32-ia32-msvc@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+226 silly placeDep ROOT @rollup/rollup-win32-x64-msvc@4.22.4 OK for: rollup@4.22.4 want: 4.22.4
+227 silly placeDep ROOT @types/estree@1.0.5 OK for: rollup@4.22.4 want: 1.0.5
+228 timing idealTree:node_modules/rollup Completed in 29ms
+229 timing idealTree:node_modules/@rollup/rollup-android-arm-eabi Completed in 0ms
+230 timing idealTree:node_modules/@rollup/rollup-android-arm64 Completed in 0ms
+231 timing idealTree:node_modules/@rollup/rollup-darwin-arm64 Completed in 0ms
+232 timing idealTree:node_modules/@rollup/rollup-darwin-x64 Completed in 0ms
+233 timing idealTree:node_modules/@rollup/rollup-linux-arm-gnueabihf Completed in 0ms
+234 timing idealTree:node_modules/@rollup/rollup-linux-arm-musleabihf Completed in 0ms
+235 timing idealTree:node_modules/@rollup/rollup-linux-arm64-gnu Completed in 0ms
+236 timing idealTree:node_modules/@rollup/rollup-linux-arm64-musl Completed in 0ms
+237 timing idealTree:node_modules/@rollup/rollup-linux-powerpc64le-gnu Completed in 0ms
+238 timing idealTree:node_modules/@rollup/rollup-linux-riscv64-gnu Completed in 0ms
+239 timing idealTree:node_modules/@rollup/rollup-linux-s390x-gnu Completed in 0ms
+240 timing idealTree:node_modules/@rollup/rollup-linux-x64-gnu Completed in 0ms
+241 timing idealTree:node_modules/@rollup/rollup-linux-x64-musl Completed in 0ms
+242 timing idealTree:node_modules/@rollup/rollup-win32-arm64-msvc Completed in 0ms
+243 timing idealTree:node_modules/@rollup/rollup-win32-ia32-msvc Completed in 0ms
+244 timing idealTree:node_modules/@rollup/rollup-win32-x64-msvc Completed in 0ms
+245 timing idealTree:node_modules/@types/estree Completed in 0ms
+246 timing idealTree:node_modules/source-map-js Completed in 0ms
+247 timing idealTree:buildDeps Completed in 2996ms
+248 timing idealTree:fixDepFlags Completed in 1ms
+249 timing idealTree Completed in 3035ms
+250 timing reify:loadTrees Completed in 3037ms
+251 timing reify:diffTrees Completed in 2ms
+252 silly reify moves {}
+253 timing reify:retireShallow Completed in 1ms
+254 timing reify:createSparse Completed in 11ms
+255 timing reify:loadBundles Completed in 0ms
+256 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-win32-x64-msvc
+257 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-win32-x64-msvc' ]
+258 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-win32-ia32-msvc
+259 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-win32-ia32-msvc' ]
+260 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-win32-arm64-msvc
+261 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-win32-arm64-msvc' ]
+262 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-linux-s390x-gnu
+263 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-linux-s390x-gnu' ]
+264 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-linux-riscv64-gnu
+265 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-linux-riscv64-gnu' ]
+266 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-linux-powerpc64le-gnu
+267 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-linux-powerpc64le-gnu' ]
+268 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-linux-arm64-musl
+269 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-linux-arm64-musl' ]
+270 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-linux-arm64-gnu
+271 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-linux-arm64-gnu' ]
+272 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-linux-arm-musleabihf
+273 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-linux-arm-musleabihf' ]
+274 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-linux-arm-gnueabihf
+275 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-linux-arm-gnueabihf' ]
+276 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-darwin-x64
+277 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-darwin-x64' ]
+278 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-darwin-arm64
+279 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-darwin-arm64' ]
+280 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-android-arm64
+281 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-android-arm64' ]
+282 verbose reify failed optional dependency /home/ubuntu/node_modules/@rollup/rollup-android-arm-eabi
+283 silly reify mark deleted [ '/home/ubuntu/node_modules/@rollup/rollup-android-arm-eabi' ]
+284 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/win32-x64
+285 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/win32-x64' ]
+286 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/win32-ia32
+287 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/win32-ia32' ]
+288 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/win32-arm64
+289 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/win32-arm64' ]
+290 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/sunos-x64
+291 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/sunos-x64' ]
+292 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/openbsd-x64
+293 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/openbsd-x64' ]
+294 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/netbsd-x64
+295 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/netbsd-x64' ]
+296 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/linux-s390x
+297 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/linux-s390x' ]
+298 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/linux-riscv64
+299 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/linux-riscv64' ]
+300 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/linux-ppc64
+301 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/linux-ppc64' ]
+302 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/linux-mips64el
+303 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/linux-mips64el' ]
+304 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/linux-loong64
+305 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/linux-loong64' ]
+306 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/linux-ia32
+307 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/linux-ia32' ]
+308 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/linux-arm64
+309 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/linux-arm64' ]
+310 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/linux-arm
+311 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/linux-arm' ]
+312 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/freebsd-x64
+313 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/freebsd-x64' ]
+314 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/freebsd-arm64
+315 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/freebsd-arm64' ]
+316 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/darwin-x64
+317 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/darwin-x64' ]
+318 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/darwin-arm64
+319 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/darwin-arm64' ]
+320 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/android-x64
+321 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/android-x64' ]
+322 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/android-arm64
+323 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/android-arm64' ]
+324 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/android-arm
+325 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/android-arm' ]
+326 verbose reify failed optional dependency /home/ubuntu/node_modules/@esbuild/aix-ppc64
+327 silly reify mark deleted [ '/home/ubuntu/node_modules/@esbuild/aix-ppc64' ]
+328 verbose reify failed optional dependency /home/ubuntu/node_modules/fsevents
+329 silly reify mark deleted [ '/home/ubuntu/node_modules/fsevents' ]
+330 timing reifyNode:node_modules/@rollup/rollup-win32-x64-msvc Completed in 28ms
+331 timing reifyNode:node_modules/@rollup/rollup-win32-ia32-msvc Completed in 27ms
+332 timing reifyNode:node_modules/@rollup/rollup-win32-arm64-msvc Completed in 27ms
+333 timing reifyNode:node_modules/@rollup/rollup-linux-s390x-gnu Completed in 27ms
+334 timing reifyNode:node_modules/@rollup/rollup-linux-riscv64-gnu Completed in 27ms
+335 timing reifyNode:node_modules/@rollup/rollup-linux-powerpc64le-gnu Completed in 27ms
+336 timing reifyNode:node_modules/@rollup/rollup-linux-arm64-musl Completed in 27ms
+337 timing reifyNode:node_modules/@rollup/rollup-linux-arm64-gnu Completed in 27ms
+338 timing reifyNode:node_modules/@rollup/rollup-linux-arm-musleabihf Completed in 27ms
+339 timing reifyNode:node_modules/@rollup/rollup-linux-arm-gnueabihf Completed in 27ms
+340 timing reifyNode:node_modules/@rollup/rollup-darwin-x64 Completed in 27ms
+341 timing reifyNode:node_modules/@rollup/rollup-darwin-arm64 Completed in 27ms
+342 timing reifyNode:node_modules/@rollup/rollup-android-arm64 Completed in 27ms
+343 timing reifyNode:node_modules/@rollup/rollup-android-arm-eabi Completed in 26ms
+344 timing reifyNode:node_modules/@esbuild/win32-x64 Completed in 25ms
+345 timing reifyNode:node_modules/@esbuild/win32-ia32 Completed in 25ms
+346 timing reifyNode:node_modules/@esbuild/win32-arm64 Completed in 26ms
+347 timing reifyNode:node_modules/@esbuild/sunos-x64 Completed in 26ms
+348 timing reifyNode:node_modules/@esbuild/openbsd-x64 Completed in 26ms
+349 timing reifyNode:node_modules/@esbuild/netbsd-x64 Completed in 26ms
+350 timing reifyNode:node_modules/@esbuild/linux-s390x Completed in 26ms
+351 timing reifyNode:node_modules/@esbuild/linux-riscv64 Completed in 26ms
+352 timing reifyNode:node_modules/@esbuild/linux-ppc64 Completed in 26ms
+353 timing reifyNode:node_modules/@esbuild/linux-mips64el Completed in 26ms
+354 timing reifyNode:node_modules/@esbuild/linux-loong64 Completed in 26ms
+355 timing reifyNode:node_modules/@esbuild/linux-ia32 Completed in 24ms
+356 timing reifyNode:node_modules/@esbuild/linux-arm64 Completed in 24ms
+357 timing reifyNode:node_modules/@esbuild/linux-arm Completed in 24ms
+358 timing reifyNode:node_modules/@esbuild/freebsd-x64 Completed in 24ms
+359 timing reifyNode:node_modules/@esbuild/freebsd-arm64 Completed in 24ms
+360 timing reifyNode:node_modules/@esbuild/darwin-x64 Completed in 24ms
+361 timing reifyNode:node_modules/@esbuild/darwin-arm64 Completed in 23ms
+362 timing reifyNode:node_modules/@esbuild/android-x64 Completed in 23ms
+363 timing reifyNode:node_modules/@esbuild/android-arm64 Completed in 23ms
+364 timing reifyNode:node_modules/@esbuild/android-arm Completed in 23ms
+365 timing reifyNode:node_modules/@esbuild/aix-ppc64 Completed in 23ms
+366 timing reifyNode:node_modules/fsevents Completed in 23ms
+367 silly tarball no local data for @rollup/rollup-linux-x64-musl@https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.22.4.tgz. Extracting by manifest.
+368 silly tarball no local data for @rollup/rollup-linux-x64-gnu@https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.22.4.tgz. Extracting by manifest.
+369 silly tarball no local data for rollup@https://registry.npmjs.org/rollup/-/rollup-4.22.4.tgz. Extracting by manifest.
+370 silly tarball no local data for vite@https://registry.npmjs.org/vite/-/vite-5.4.7.tgz. Extracting by manifest.
+371 timing reifyNode:node_modules/@types/estree Completed in 325ms
+372 timing reifyNode:node_modules/picocolors Completed in 323ms
+373 timing reifyNode:node_modules/esbuild Completed in 346ms
+374 timing reifyNode:node_modules/nanoid Completed in 372ms
+375 timing reifyNode:node_modules/source-map-js Completed in 376ms
+376 timing reifyNode:node_modules/postcss Completed in 437ms
+377 http fetch GET 200 https://registry.npmjs.org/@rollup/rollup-linux-x64-musl/-/rollup-linux-x64-musl-4.22.4.tgz 648ms (cache miss)
+378 timing reifyNode:node_modules/@rollup/rollup-linux-x64-musl Completed in 693ms
+379 http fetch GET 200 https://registry.npmjs.org/@rollup/rollup-linux-x64-gnu/-/rollup-linux-x64-gnu-4.22.4.tgz 682ms (cache miss)
+380 timing reifyNode:node_modules/@rollup/rollup-linux-x64-gnu Completed in 729ms
+381 http fetch GET 200 https://registry.npmjs.org/rollup/-/rollup-4.22.4.tgz 678ms (cache miss)
+382 timing reifyNode:node_modules/rollup Completed in 726ms
+383 http fetch GET 200 https://registry.npmjs.org/vite/-/vite-5.4.7.tgz 689ms (cache miss)
+384 timing reifyNode:node_modules/vite Completed in 740ms
+385 timing reifyNode:node_modules/@esbuild/linux-x64 Completed in 767ms
+386 timing reify:unpack Completed in 774ms
+387 timing reify:unretire Completed in 1ms
+388 timing build:queue Completed in 8ms
+389 timing build:link:node_modules/esbuild Completed in 3ms
+390 timing build:link:node_modules/nanoid Completed in 4ms
+391 timing build:link:node_modules/rollup Completed in 4ms
+392 timing build:link:node_modules/vite Completed in 4ms
+393 timing build:link Completed in 4ms
+394 info run esbuild@0.21.5 postinstall node_modules/esbuild node install.js
+395 info run esbuild@0.21.5 postinstall { code: 0, signal: null }
+396 timing build:run:postinstall:node_modules/esbuild Completed in 211ms
+397 timing build:run:postinstall Completed in 211ms
+398 timing build:deps Completed in 224ms
+399 timing build Completed in 224ms
+400 timing reify:build Completed in 224ms
+401 timing reify:trash Completed in 5ms
+402 timing reify:save Completed in 26ms
+403 timing reify Completed in 4105ms
+404 silly ADD node_modules/@types/estree
+405 silly ADD
+406 silly ADD
+407 silly ADD
+408 silly ADD node_modules/@rollup/rollup-linux-x64-musl
+409 silly ADD node_modules/@rollup/rollup-linux-x64-gnu
+410 silly ADD
+411 silly ADD
+412 silly ADD
+413 silly ADD
+414 silly ADD
+415 silly ADD
+416 silly ADD
+417 silly ADD
+418 silly ADD
+419 silly ADD
+420 silly ADD
+421 silly ADD node_modules/source-map-js
+422 silly ADD node_modules/picocolors
+423 silly ADD node_modules/nanoid
+424 silly ADD
+425 silly ADD
+426 silly ADD
+427 silly ADD
+428 silly ADD
+429 silly ADD
+430 silly ADD node_modules/@esbuild/linux-x64
+431 silly ADD
+432 silly ADD
+433 silly ADD
+434 silly ADD
+435 silly ADD
+436 silly ADD
+437 silly ADD
+438 silly ADD
+439 silly ADD
+440 silly ADD
+441 silly ADD
+442 silly ADD
+443 silly ADD
+444 silly ADD
+445 silly ADD
+446 silly ADD
+447 silly ADD node_modules/rollup
+448 silly ADD node_modules/postcss
+449 silly ADD
+450 silly ADD node_modules/esbuild
+451 silly ADD node_modules/vite
+452 timing command:install Completed in 4121ms
+453 verbose exit 0
+454 timing npm Completed in 4186ms
+455 info ok
