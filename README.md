@@ -6,9 +6,9 @@ sudo apt install npm
 
 3. sudo docker pull chayasu/bun-react:latest
  
-4. sudo docker run -d -p 5173:5173 chayasu/bun-react:latest
+4. sudo docker run -d --name bun-react-app -p 5173:5173 chayasu/bun-react:latest
    
-6. sudo docker exec -it my-bun-react-app /bin/sh
+6. sudo docker exec -it bun-react-app /bin/bash
    
 7. npm run dev
 
