@@ -1,3 +1,5 @@
+*** Public IP AWS 47.128.254.136:5173 ***
+
 How to use
 1. sudo apt update
 2. sudo apt install docker.io
