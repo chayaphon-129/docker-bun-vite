@@ -1,18 +1,22 @@
 How to use
 1. sudo apt update
-2. 
-sudo apt install docker.io
+2. sudo apt install docker.io
 
 sudo apt install npm
+
 3. sudo docker pull chayasu/bun-react:latest
+ 
 4. sudo docker run -d -p 5173:5173 chayasu/bun-react:latest
-5. sudo docker exec -it my-bun-react-app /bin/sh
-6. npm run dev
+   
+6. sudo docker exec -it my-bun-react-app /bin/sh
+   
+7. npm run dev
 
 
 วิธีการนำโปรเจคขึ้น Docker
 
 1. install docker.io
+   
 2. สร้าง Dockerfile ดังต่อไปนี้
 
 ```
